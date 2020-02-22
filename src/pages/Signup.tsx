@@ -35,7 +35,6 @@ export default (props: any) => {
         <TextField style={{ margin: 8 }} variant="outlined" value={confirm_password} name="confirm_password" label="Confirm Password" type="password" onChange={(e: any) => {setConfirmPassword(e.target.value)}}/>
         <TextField style={{ margin: 8 }} variant="outlined" value={displayName} name="displayName" label="DisplayName" onChange={(e: any) => {setDisplayName(e.target.value)}}/>
         <Button style={{ margin: 8, padding: 15 }} variant="outlined" onClick={() => signup()} >Sign up</Button>
-        <Link style={{ margin: 16, padding: 16 }} href="/login">Login</Link>
       </Container>
     </Fragment>
   );

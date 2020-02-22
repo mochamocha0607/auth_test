@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react";
 import { Button, Container, Typography } from "@material-ui/core";
 import { auth } from "../firebase";
+import Dashboard from './Dashboard'
 
 export default (props: any) => {
   const [user, setUser] = useState<object>({});
@@ -20,6 +21,7 @@ export default (props: any) => {
         <Typography>Here is the user's information</Typography>
         <Typography variant="caption" component="pre">{JSON.stringify(user, null, 4)}</Typography>
         <Button fullWidth onClick={(e) => logout(e)}>Logout</Button>
+        <Dashboard />
       </Container>
     </Fragment>
   );
